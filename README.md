@@ -119,6 +119,9 @@ this time, though, with two columns of foreign keys.
 |  1 |         5 |      7  | 143 | 13th   |
 |  1 |         5 |      7  | 647 | 1st    |
 
+We need to add at least a person and a city to our tables. So let's do that
+first.
+
 New records can be inserted directly into the `addresses` table,
  linking together People and Cities.
 These tables can all be queried using INNER JOIN or using nested SQL queries,
