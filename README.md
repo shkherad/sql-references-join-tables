@@ -135,6 +135,14 @@ let's imagine how a skill endorsement system like LinkedIn's might work.
 First, let's create a `skills` table
 and fill it with data from `data/skills.csv`.
 
+Now let's create a `people` table.  We're going to hold off on bulk loading the
+people table for a bit and instead insert a person.
+
+```sql
+INSERT INTO people(surname,given_name,gender,height,weight,born_on)
+VALUES ('Rollins', 'Henry', 'm', 69, 180, '1961-02-13');
+```
+
 Then we'll create an `endorsements` table to connect `skills`
 to the existing `people` table.
 

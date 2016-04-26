@@ -2,5 +2,5 @@
 CREATE TABLE skills(
   id SERIAL PRIMARY KEY,
   language CHARACTER VARYING,
-  framework CHARACTER VARYING,
+  framework CHARACTER VARYING
 );

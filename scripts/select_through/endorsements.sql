@@ -1,7 +1,25 @@
 -- get information using endorsements join table
+
+
+-- SELECT column_name(s)
+-- FROM table1
+-- INNER JOIN table2
+-- ON table1.column_name=table2.column_name;
+
 select p.given_name, p.surname
   from people p
-    inner join endorsement e on e.person_id = p.id
-    inner join skills s on e.skills_id = s.id
-  where s.framework = 'Ember.js'
+  inner join endorsements e
+on p.id = e.id
 ;
+
+-- Query for person that shares endoresments
+
+-- Insert Bob Barker?
+
+select s.framework, s.language
+  from skills s
+  inner join endorsements e
+on s.id = e.id
+;
+
+-- Query for skill
