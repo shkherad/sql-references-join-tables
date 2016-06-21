@@ -1,1 +1,3 @@
 -- load companies data from a csv file
+
+\copy companies(name,city,region,country) FROM 'data/companies.csv' WITH (HEADER true, FORMAT csv)
